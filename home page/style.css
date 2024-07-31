@@ -103,6 +103,7 @@ html {
     width: 12rem;
     height: auto;
     margin: auto;
+    border-radius: 10px;
 }
 .scroll-container {
     -ms-overflow-style: no,ne;  /* Internet Explorer 10+ */
@@ -140,9 +141,10 @@ html {
 
 .hidden {
     opacity: 0;
-    transform: translateY(10%);
+    transform: translateY(50%);
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
+    transition-property: opacity, transform, filter;
     filter: blur(1px);
 }
 
