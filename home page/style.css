@@ -140,17 +140,18 @@ html {
 
 
 .hidden {
-    opacity: 0;
-    transform: translateY(50%);
-    transition-duration: 1s;
+    opacity: 0;    
+    filter: blur(1px);
     transition-timing-function: ease-in-out;
     transition-property: opacity, transform, filter;
-    filter: blur(1px);
 }
 
 .show {
     opacity: 1;
-    transform: translateX(0%);
     filter: blur(0px);
+}
+
+.accordion-collapse {
+    text-align: start !important;
 }
   
