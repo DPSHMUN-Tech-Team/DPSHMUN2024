@@ -117,23 +117,9 @@ html {
 }
 
 .countdown {
-    font-size: 3em;
     text-align: center;
-    margin-top: 2%;
     display: flex;
     justify-content: center;
-  }
-  .time-section {
-    margin: 0 45px;
-  }
-  .time-section span {
-    display: block;
-    color: rgb(105, 153, 212);
-  }
-  .label {
-    font-size: 0.5em;
-    margin-top: 20px;
-    color: #a024ff;
   }
 
 .accordion-button {
@@ -159,10 +145,16 @@ html {
 
 .scroll-side {
     position: absolute;
-    z-index: 15000000;
-    top: 0;
-    left: 0;
-    /* bottom: 1rem; */
-    /* margin-bottom: 2rem; */
+    z-index: 1;
+    bottom: 0;
+    margin: 2rem;
+    border: 2px solid darkgreen;
+    background: rgb(78, 125, 78) !important;
+}
+
+.arrow {
+    fill: rgb(var(--bs-tertiary-color-rgb));
+    width: 2rem;
+    height: 2rem;
 }
   

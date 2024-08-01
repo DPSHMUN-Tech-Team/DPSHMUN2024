@@ -121,26 +121,26 @@
 
   <div class="b-example-divider"></div>
 
-  <!-- <div class="container py-3" style="background-image: url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=2000&q=80)">
-    <div class="countdown">
-      <div class="time-section">
-        <span id="days">--</span>
-        <span class="label">Days</span>
+  <div class="container">
+      <div class="countdown row-featurette pt-5 pb-5">
+        <div class="time-section col">
+          <h2 id="days">--</h2>
+          <h4 class="label">Days</h4>
+        </div>
+        <div class="time-section col">
+          <h2 id="hours">--</h2>
+          <h4 class="label">Hours</h4>
+        </div>
+        <div class="time-section col">
+          <h2 id="minutes">--</h2>
+          <h4 class="label">Minutes</h4>
+        </div>
+        <div class="time-section col">
+          <h2 id="seconds">--</h2>
+          <h4 class="label">Seconds</h4>
+        </div>
       </div>
-      <div class="time-section">
-        <span id="hours">--</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="time-section">
-        <span id="minutes">--</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="time-section">
-        <span id="seconds">--</span>
-        <span class="label">Seconds</span>
-      </div>
-    </div>
-  </div> -->
+  </div>
 
   <div class="b-example-divider"></div>
 
@@ -209,7 +209,7 @@
     <div class="featurette-divider"></div>
 
     <div class="row featurette">
-      <div class="col">
+      <div class="col" style="position: relative;">
         <h2 class="featurette-heading fw-normal lh-1 text-center mb-5 mt-3 hidden">Committees</h2>
 
         <div class="scroll-container rounded">
@@ -239,8 +239,16 @@
           </div>
         </div>
 
-        <button id="left" class="rounded scroll-side">sdfssdfds</button>
-        <button id="right" class="rounded scroll-side">fdsdfdf</button>
+        <button class="rounded scroll-side btn" id="left-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="arrow bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+        </button>
+        <button class="rounded scroll-side btn" style="right: 0;" id="right-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="arrow bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -509,31 +517,31 @@
       })
     }
 
-  // var countDownDate = new Date("August 22, 2024 00:00:00").getTime();  
-  // setInterval(function() {  
+  var countDownDate = new Date("August 22, 2024 00:00:00").getTime();  
+  setInterval(function() {  
 
-  //   var now = new Date().getTime();
+    var now = new Date().getTime();
 
-  //   var distance = Math.max(0, countDownDate - now);
+    var distance = Math.max(0, countDownDate - now);
 
-  //   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  //   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  //   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  //   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  //   document.getElementById("days").innerHTML = String(days).padStart(2, "0");
-  //   document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
-  //   document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
-  //   document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
+    document.getElementById("days").innerHTML = String(days).padStart(2, "0");
+    document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
+    document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
     
-  // }, 1000);
+  }, 1000);
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if(entry.isIntersecting) {
-        entry.target.style.transform = 'translateY(30%)';
+        entry.target.style.transform = 'translateY(calc(1rem + 10%))';
         const int = setInterval(() => {
-          entry.target.style['transition-duration'] = '1s';
+          entry.target.style['transition-duration'] = '0.75s';
           entry.target.classList.add('show');
           entry.target.style.transform = 'translateY(0%)'
           clearInterval(int);
@@ -546,6 +554,16 @@
 
   const hiddenElements = document.querySelectorAll('.hidden');
   hiddenElements.forEach(e => observer.observe(e));
+
+  document.querySelectorAll('.scroll-side').forEach(e => {
+    let scrollMult = 1;
+    if(e.id == "left-btn") scrollMult *= -1;
+    e.addEventListener('click', () => {
+      const bounds1 = scroll1.getBoundingClientRect();
+      scroll();
+      scrollContainer.scroll({top: 0, left: Math.max(bounds1.width / 2 - 1, Math.min(3 * bounds1.width / 2 + 1, scrollContainer.scrollLeft + scrollContainer.clientWidth * scrollMult)), behavior: 'smooth'})
+    })
+  })
 
   </script>
 
