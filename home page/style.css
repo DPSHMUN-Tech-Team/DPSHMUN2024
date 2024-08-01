@@ -80,6 +80,7 @@ html {
 }
 
 .scroll-container {
+    position: relative;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -105,8 +106,9 @@ html {
     margin: auto;
     border-radius: 10px;
 }
+
 .scroll-container {
-    -ms-overflow-style: no,ne;  /* Internet Explorer 10+ */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
 
@@ -153,5 +155,14 @@ html {
 
 .accordion-collapse {
     text-align: start !important;
+}
+
+.scroll-side {
+    position: absolute;
+    z-index: 15000000;
+    top: 0;
+    left: 0;
+    /* bottom: 1rem; */
+    /* margin-bottom: 2rem; */
 }
   
