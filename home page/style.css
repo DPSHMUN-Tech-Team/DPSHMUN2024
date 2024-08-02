@@ -157,4 +157,11 @@ html {
     width: 2rem;
     height: 2rem;
 }
+
+#myCarousel {
+    background-image: url("../IMG_3922.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
   
