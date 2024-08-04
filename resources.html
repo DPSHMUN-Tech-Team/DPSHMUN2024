@@ -377,19 +377,15 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.presentation-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+.presentation-content iframe {
+    width: 100%;
+    height: 60vw;
+    max-height: 30rem;
 }
 
-.presentation-image img {
+.presentation-image iframe {
     border-radius: 10px;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .presentation-details {
@@ -636,14 +632,14 @@
         </div>
 
         <section class="presentation-section">
-            <div class="presentation-content">
-                <div class="presentation-image">
-                    <img src="Images/MUNPPTIllustration.png" alt="Presentation Thumbnail">
+            <div class="presentation-content row">
+                <div class="presentation-image col-md-7">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQrZ5EfWU8qvc6A8MhuqnsDlIA-EeHd2SYQg7Q6d6hy4aKgKWbYY-7LicIMA1Cv0cSi-CkC2qqIxrvA/embed?start=false&loop=false&delayms=15000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </div>
-                <div class="presentation-details">
+                <div class="presentation-details col-md-7 align-self-center mt-4">
                     <h3>Introduction to DPSHMUN</h3>
                     <p class="presentation-description">This presentation shows insight about the proceedings of DPSHMUN. It also provides information for delegates to be aware about while participating in this conference.</p>
-                    <a href="Resources Content/MUN_PPT.pdf" class="presentation-view-btn" download>Download</a>
+                    <a href="Resources Content/MUN_PPT.pdf" class="presentation-view-btn"  target="_blank" download>Download</a>
                 </div>
             </div>
         </section>
