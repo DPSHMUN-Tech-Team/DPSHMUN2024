@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom styles for this template -->
@@ -62,13 +65,42 @@
       </ul>
     </div>
 
+    
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Carousel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
 <main>
 
   <div id="myCarousel" class="carousel slide m-0" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
 
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-tertiary-color)"/></svg>
         <div class="container">
 
           <div class="carousel-caption">
@@ -85,7 +117,7 @@
   <div class="b-example-divider"></div>
 
   <div class="container">
-      <div class="countdown row-featurette pt-5 pb-5">
+      <div class="countdown row pt-5 pb-5">
         <div class="time-section col">
           <h2 id="days">--</h2>
           <h4 class="label">Days</h4>
@@ -109,6 +141,7 @@
 
   <!-- About Us -->
   <div class="container">
+    <div class="featurette-divider"></div>
 
     <div class="row featurette text-center">
       <div class="col">
@@ -132,17 +165,17 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1 hidden">Heading 1</h2>
-        <p class="lead hidden">
+        <p class="lead hidden mt-3">
           Dear delegates, 
 
           It gives me immense pleasure to host you at the 2024 edition of Delhi Public School, Hyderabad Model United Nations conference. As DPSHMUN reaches its [] year, it continues to serve as a platform for inquisitive minds to engage in constructive dialogue and collaborative problem-solving.
-          
+
           At its essence, a Model United Nations conference is a means through which students improve their dexterity in the areas of diplomacy, debate, and conflict resolution. In light of the increasingly precarious state of global issues, it becomes imperative for young individuals to foster such skills and shoulder the burden of addressing pressing matters. Nurturing such problem-solvers is at the core of our conference’s existence. We aim to simulate circumstances that mirror pivotal decision-making environments in order to instil an ethos of altruism and consciousness within our participants, all in line with our guiding principle of ‘Service before Self’. 
-          
+
           On behalf of the Secretariat, I would like to express my gratitude to all the participants for their enthusiasm. We remain steadfast in our commitment to fostering an inclusive learning environment for all. At this year’s edition of DPSHMUN, we bring to you a wide range of committees, from ones that tackle issues related to international peace and security to others that deal with matters related to sporting events. We promise to leave you with a new perspective on pertinent issues thereby inspiring you to take meaningful action.   
-          
+
           We eagerly look forward to welcoming you on the 22nd and 23rd of August at the Senior Secondary Campus of Delhi Public School, Hyderabad. 
-          
+
           Regards, 
           Yamini Tumu
           Secretary-General, DPSHMUN 2024 
@@ -166,39 +199,39 @@
       <div class="col" style="position: relative;">
         <h2 class="featurette-heading fw-normal lh-1 text-center mb-5 mt-3 hidden">Committees</h2>
 
-        <div class="scroll-container rounded">
+        <div class="scroll-container rounded hidden">
           <div class="scroll" id="scroll1">
-            <div class="scroll-img-container"><img src="../2.png"></div>
-            <div class="scroll-img-container"><img src="../3.png"></div>
-            <div class="scroll-img-container"><img src="../4.png"></div>
-            <div class="scroll-img-container"><img src="../5.png"></div>
-            <div class="scroll-img-container"><img src="../6.png"></div>
-            <div class="scroll-img-container"><img src="../7.png"></div>
-            <div class="scroll-img-container"><img src="../8.png"></div>
-            <div class="scroll-img-container"><img src="../9.png"></div>
-            <div class="scroll-img-container"><img src="../10.png"></div>
-            <div class="scroll-img-container"><img src="../11.png"></div>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../2.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../3.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../4.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../5.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../6.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../7.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../8.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../9.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../10.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../11.png"></div></a>
           </div>
           <div class="scroll" id="scroll2">
-            <div class="scroll-img-container"><img src="../2.png"></div>
-            <div class="scroll-img-container"><img src="../3.png"></div>
-            <div class="scroll-img-container"><img src="../4.png"></div>
-            <div class="scroll-img-container"><img src="../5.png"></div>
-            <div class="scroll-img-container"><img src="../6.png"></div>
-            <div class="scroll-img-container"><img src="../7.png"></div>
-            <div class="scroll-img-container"><img src="../8.png"></div>
-            <div class="scroll-img-container"><img src="../9.png"></div>
-            <div class="scroll-img-container"><img src="../10.png"></div>
-            <div class="scroll-img-container"><img src="../11.png"></div>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../2.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../3.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../4.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../5.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../6.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../7.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../8.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../9.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../10.png"></div></a>
+            <a href="committee" target="_blank"><div class="scroll-img-container"><img src="../11.png"></div></a>
           </div>
         </div>
 
-        <button class="rounded scroll-side btn" id="left-btn">
+        <button class="rounded scroll-side btn hidden" id="left-btn">
           <svg xmlns="http://www.w3.org/2000/svg" class="arrow bi bi-arrow-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
           </svg>
         </button>
-        <button class="rounded scroll-side btn" style="right: 0;" id="right-btn">
+        <button class="rounded scroll-side btn hidden" style="right: 0;" id="right-btn">
           <svg xmlns="http://www.w3.org/2000/svg" class="arrow bi bi-arrow-right" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
           </svg>
@@ -206,7 +239,7 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
+    <!-- <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-5">
@@ -228,7 +261,7 @@
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
       </div>
-    </div>
+    </div> -->
 
     <div class="featurette-divider"></div>
 
@@ -342,12 +375,16 @@
 
   <div class="b-example-divider"></div>  
 
+  <!-- FOOTER -->
+  <footer class="container">
+    <div class="featurette-divider"></div>
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
 </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
-
-  <!-- Custom script - 1 -->
   <script>
 
   (() => {
@@ -434,7 +471,7 @@
     const scroll1 = scrollContainer.querySelector('#scroll1');
     const scroll2 = scrollContainer.querySelector('#scroll2');
 
-    scrollContainer.scrollLeft = (scrollContainer.scrollWidth - scrollContainer.clientWidth) / 2 + 10 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    scrollContainer.scrollLeft = (scrollContainer.scrollWidth - scrollContainer.clientWidth) / 2 + 12 * parseFloat(getComputedStyle(document.documentElement).fontSize);
 
     scrollContainer.addEventListener('scroll', scroll);
     window.addEventListener('resize', scroll);
@@ -484,31 +521,42 @@
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if(entry.isIntersecting) {
-        entry.target.style.transform = 'translateY(calc(1rem + 10%))';
-        const int = setInterval(() => {
-          entry.target.style['transition-duration'] = '0.75s';
-          entry.target.classList.add('show');
-          entry.target.style.transform = 'translateY(0%)'
-          clearInterval(int);
-        }, 100);
+        entry.target.classList.add('show');
         observer.unobserve(entry.target);
       }
-      // else entry.target.classList.remove('show');
     })
   });
 
   const hiddenElements = document.querySelectorAll('.hidden');
   hiddenElements.forEach(e => observer.observe(e));
 
+
+  let prev;
+  let mouseDown = false;
+
   document.querySelectorAll('.scroll-side').forEach(e => {
     let scrollMult = 1;
     if(e.id == "left-btn") scrollMult *= -1;
-    e.addEventListener('click', () => {
-      const bounds1 = scroll1.getBoundingClientRect();
-      scroll();
-      scrollContainer.scroll({top: 0, left: Math.max(bounds1.width / 2 - 1, Math.min(3 * bounds1.width / 2 + 1, scrollContainer.scrollLeft + scrollContainer.clientWidth * scrollMult)), behavior: 'smooth'})
+    e.addEventListener('pointerdown', () => {
+      const bounds1 = scroll1.getBoundingClientRect();      
+      // scrollContainer.scroll({top: 0, left: Math.max(bounds1.width / 2 - 1, Math.min(3 * bounds1.width / 2 + 1, scrollContainer.scrollLeft + (24 * parseFloat(getComputedStyle(document.documentElement).fontSize))  * scrollMult)), behavior: 'smooth'})
+      prev = performance.now();
+      mouseDown = true;
+      window.requestAnimationFrame(() => scrollButton(scrollMult));
     })
-  })
+  });
+
+  window.addEventListener('pointerup', () => mouseDown = false);
+
+  function scrollButton(scrollMult) {
+    const elapsed = performance.now();
+    const dt = elapsed - prev
+    if(dt > 0) {
+      scrollContainer.scrollLeft += 0.5 * dt * scrollMult;
+    }
+    prev = elapsed;
+    if(mouseDown) window.requestAnimationFrame(() => scrollButton(scrollMult));
+  }
 
   </script>
 

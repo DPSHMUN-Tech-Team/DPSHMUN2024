@@ -81,13 +81,14 @@ html {
 
 .scroll-container {
     position: relative;
-    padding: 2rem;
     display: flex;
     align-items: center;
-    background-color: #333333;
+    background-color: rgb(33, 37, 41);
     overflow: auto;
     white-space: nowrap;
     user-select: none;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .scroll-container .scroll {
@@ -96,15 +97,21 @@ html {
 
 .scroll-img-container {
     display: inline-flex;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    border-radius: 10px;
+    transition-duration: 0.5s;
 }
 
 .scroll-img-container img {
     width: 12rem;
     height: auto;
-    margin: auto;
     border-radius: 10px;
+}
+
+.scroll-img-container:hover {
+    transform: translateY(-5%);
+    box-shadow: 0 0.5rem 1rem rgba(128, 128, 128, 0.4);
 }
 
 .scroll-container {
@@ -112,7 +119,7 @@ html {
     scrollbar-width: none;  /* Firefox */
 }
 
-.scroll-container::-webkit-scrollbar { 
+.scroll-container::-webkit-scrollbar-thumb { 
     display: none;  /* Safari and Chrome */
 }
 
@@ -132,11 +139,14 @@ html {
     filter: blur(1px);
     transition-timing-function: ease-in-out;
     transition-property: opacity, transform, filter;
+    transform: translateY(calc(1rem + 5%));
+    transition-duration: 0.75s;
 }
 
 .show {
     opacity: 1;
     filter: blur(0px);
+    transform: translateY(0);
 }
 
 .accordion-collapse {
@@ -148,12 +158,12 @@ html {
     z-index: 1;
     bottom: 0;
     margin: 2rem;
-    border: 2px solid darkgreen;
+    border: 2px solid darkgreen !important;
     background: rgb(78, 125, 78) !important;
 }
 
 .arrow {
-    fill: rgb(var(--bs-tertiary-color-rgb));
+    fill: rgb(33, 37, 41);
     width: 2rem;
     height: 2rem;
 }
@@ -163,5 +173,13 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+}
+
+.featurette-heading {
+    margin-top: 0 !important;
+}
+
+.lead, .accordion-body {
+    white-space: pre-line;
 }
   
