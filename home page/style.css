@@ -118,7 +118,7 @@ html {
 }
 
 .scroll-img-container:hover {
-    transform: translateY(-3%) scale(1.05);
+    transform: translateY(-4%) scale(1.05);
     box-shadow: 0 0.5rem 1rem rgba(128, 128, 128, 0.4);
 }
 
