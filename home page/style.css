@@ -105,8 +105,8 @@ html {
 
 .scroll-img-container {
     display: inline-flex;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     border-radius: 10px;
     transition-duration: 0.5s;
 }
@@ -118,7 +118,7 @@ html {
 }
 
 .scroll-img-container:hover {
-    transform: translateY(-5%);
+    transform: translateY(-3%) scale(1.05);
     box-shadow: 0 0.5rem 1rem rgba(128, 128, 128, 0.4);
 }
 
