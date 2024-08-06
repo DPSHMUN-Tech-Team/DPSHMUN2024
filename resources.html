@@ -255,13 +255,13 @@
         }
 
         @keyframes fadeIn {
-            0% { opacity: 0; transform: scale(0.9); }
-            100% { opacity: 1; transform: scale(1); }
+            0% { opacity: 0; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.05); }
         }
 
         @keyframes fadeOut {
-            0% { opacity: 1; transform: scale(1); }
-            100% { opacity: 0; transform: scale(0.9); }
+            0% { opacity: 1;}
+            100% { opacity: 0; }
         }
 
         .background-guide-item {
@@ -775,10 +775,10 @@
                         initialText.style.animation = 'initialTextPopUp 1.5s ease-in-out forwards';
                         await wait(1500);
                             initialAnimationContainer.style.animation = 'fadeOut 1s forwards';
+                            heroSection.style.animation = 'fadeIn 1.5s forwards';
                         await wait(1000)
                                 initialAnimationContainer.style.visibility = 'hidden';
                                 initialAnimationContainer.style.opacity = '0';
-                            heroSection.style.animation = 'fadeIn 1.5s forwards';
                     }
 
                     function wait(time) {
