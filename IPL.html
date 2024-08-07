@@ -89,71 +89,6 @@
     <link href="./CSS/heroes.css" rel="stylesheet">
 
   </head>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', {
-      'packages':['geochart'],
-    });
-    google.charts.setOnLoadCallback(drawRegionsMap);
-
-    function drawRegionsMap() {
-      var data = new google.visualization.arrayToDataTable([
-      ['State', 'Tooltip'],
-      ['Andaman and Nicobar Islands',44],
-['Andhra Pradesh',13],
-['Arunachal Pradesh',34],
-['Assam',13],
-['Bihar',34],
-['Chandigarh',15],
-['Chhattisgarh',34],
-['Dadra and Nagar Haveli',34],
-['Daman and Diu',34],
-['Delhi',34],
-['Goa',76],
-['Gujarat',34],
-['Haryana',14],
-['Himachal Pradesh',34],
-['Jammu and Kashmir',34],
-['Jharkhand',34],
-['Karnataka',34],
-['Kerala',34],
-['Ladakh',34],
-['Lakshadweep',34],
-['Madhya Pradesh',200000],
-['Maharashtra',34],
-['Manipur',34],
-['Meghalaya',34],
-['Mizoram',23],
-['Nagaland',34],
-['Orissa',34],
-['Puducherry',34],
-['Punjab',34],
-['Rajasthan',34],
-['Sikkim',34],
-['Tamil Nadu',34],
-['Telangana',34],
-['Tripura',34],
-['Uttar Pradesh',34],
-['Uttarakhand',34],
-['West Bengal',54]]);
-
-      var options = {
-      colorAxis: {colors: ['#D0BEA8', '#D0BEA8','green']},
-      backgroundColor: '#212529',
-      legend: 'none',
-      height: 600,
-      width: 1000, 
-      datalessRegionColor: 'transparent',
-      region: 'IN',
-      resolution: 'provinces',
-      };
-
-      
-
-      var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-      chart.draw(data, options);
-    }
-  </script>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -307,17 +242,6 @@
         Auction - Special Edition.
       </p>
     </div>
-
-    <div class="b-example-divider"></div>
-    
-    <br><br><br>
-
-    <h1 align="center">Allocations</h1>
-    <br><br><br>
-
-    <div id="regions_div" style="width: 1500px; height: 700px;" align="center"></div>
-
-    <div class="b-example-divider"></div>
 
       <!-- EB show -->
       <main>  
