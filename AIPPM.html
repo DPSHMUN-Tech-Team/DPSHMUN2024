@@ -88,39 +88,8 @@
     <link href="./CSS/carousel.css" rel="stylesheet">
     <link href="./CSS/heroes.css" rel="stylesheet">
 
-  </head>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', {
-      'packages':['geochart'],
-    });
-    google.charts.setOnLoadCallback(drawRegionsMap);
-
-    function drawRegionsMap() {
-      var data = new google.visualization.arrayToDataTable([
-        ['Country', 'Tooltip'],
-        ['Germany', 'Germany - Ronith'],
-        ['United States', 'United States - Ayush'],
-        ['Brazil', 'Brazil - Gumma'],
-        ['Canada', 'Canada - Kushal'],
-        ['France', 'France - Ahan'],
-        ['Russia', 'Russia - Satvik'],
-      ]);
-
-      var options = {
-      colorAxis: {colors: ['#BE965B', '#BE965B','#BE965B']},
-      backgroundColor: '#212529',
-      legend: 'none',
-      height: 600,
-      width: 1000, 
-      datalessRegionColor: '#D0BEA8',
-      };
-
-      
-
-      var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-      chart.draw(data, options);
-    }
+  </head>   
+  
   </script>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -275,15 +244,6 @@
         Deliberating upon electoral reforms with a special emphasis on One Nation, One Election.
       </p>
     </div>
-
-    <div class="b-example-divider"></div>
-            
-    <br><br><br>
-
-    <h1 align="center">Allocations</h1>
-    <br><br><br>
-
-    <div id="regions_div" style="width: 1500px; height: 700px;" align="center"></div>
 
     <div class="b-example-divider"></div>
 
